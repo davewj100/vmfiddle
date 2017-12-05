@@ -16,6 +16,22 @@
                 "draggable": "true"
             }
         },
+        "list": {
+            "prototype": "digit/ui/list.reel",
+            "properties": {
+                "element": {"#": "list"},
+                "content": [
+                    ""
+                ],
+                "contentController": {"@": "rangeController"},
+                "contenteditable": "true",
+                "dir": "ltr",
+                "draggable": "true"
+            }
+        },
+        "rangeController": {
+            "prototype": "montage/core/range-controller"
+        },
         "title": {
             "prototype": "digit/ui/title.reel",
             "properties": {
@@ -32,6 +48,9 @@
 <body>
     <div data-montage-id="main" data-montage-skin="light" class="Main">
         <h1 data-montage-id="title"></h1>
+        <ul data-montage-id="list">
+            <li></li>
+        </ul>
     </div>
 </body>
 </html>
